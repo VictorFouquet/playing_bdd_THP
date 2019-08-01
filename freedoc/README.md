@@ -68,7 +68,7 @@ Pour connaitre sa ville :
 Pour connaître le détail de ses rdv (docteur, ville, date) :
 
 	my_patient_appointments = my_patient.appointments
-my_patient_appointments.each do |appointment|
+	my_patient_appointments.each do |appointment|
 		print Doctor.find(appointment.doctor_id).first_name, " ", Doctor.find(appointment.doctor_id).last_name, ", ", City.find(appointment.city_id).name, ", ", appointment.date, "\n"
 	end
 	
